@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM FOR BOOKING HOLIDAY!!!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+    <form>
+    <!--details-->  
+      <fieldset>
+        <legend><span>1</span> Your Details</legend>
+      <!--Name-->  
+        <label>
+        <input type="text" placeholder="name" required  autofocus>
+        </label>
+      <!--Email-->
+        <label>
+        <input type="email" placeholder="email" required>
+        </label>
+      </fieldset>
+
+      <!--Destination & Departures-->
+      <fieldset>
+        <legend><span>2</span> Destination & Departure</legend>
+        <!--dates-->
+        <label for="departure">Departure</label>
+        <input id="departure" type="date">
+        <label for="return">Return</label>
+        <input id="return" type="date">
+        <!--select-->
+        <label for="Leaving">Leaving From:</label>
+        <select name="leaving" id="leaving">
+            <option value="Lagos">Lagos</option>
+            <option value="Abuja">Abuja</option>
+            <option value="Port-harcourt">Port-harcourt></option>
+            <option value="Awka">Awka</option>
+        </select>
+        <label for="destination">Going To:</label>
+        <select name="destination" id="destination">
+            <option value="Lagos">Lagos</option>
+            <option value="Abuja">Abuja</option>
+            <option value="Port-harcourt">Port-harcourt</option>
+            <option value="Awka">Awka</option>
+        </select>
+      </fieldset>
+
+      <!--Feedback-->
+      <fieldset>
+        <legend><span>3</span> Feedback</legend>
+        <!--select-->
+        <label for="source">How did you hear about us?</label>
+        <select name="source" id="source">
+            <option value="Google">Google</option>
+            <option value="Radio">Radio</option>
+            <option value="TV">TV</option>
+            <option value="Other">Other</option>
+        </select>
+        <!--radio-->
+        <p>Would you use our service again?</p>
+        <label for="radio-yes">Yes:</label>
+        <input id="radio-yes" type="radio" name="choose">
+        <label for="radio-no">No:</label>
+        <input type="radio" id="radio-no" name="choose">
+        <label for="radio-maybe">Maybe:</label>
+        <input type="radio" id="radio-maybe" name="choose">
+        <!--textarea-->
+        <br>
+        <label for="Feedback">Any comments?</label>
+        <textarea name="feedback" id="feedback" cols="40" rows="3"></textarea>
+        <br>
+        <!--checkbox-->
+        <label for="checkbox">Join mailing list?</label>
+        <input type="checkbox" id="checkbox">
+      </fieldset>
+      <!--submit-->
+      <input type="submit" value="Submit">
+    </form>
+    
+    
+</body>
+</html>
